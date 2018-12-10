@@ -1,0 +1,76 @@
+$hover:#2C4832;
+$primary:#3F5D45;
+$secondary:#ffe180;
+$third:#EAF0ED;
+$four:#8DA291;
+$text-size:16px;
+$text-why:#8DA291;
+.col-12{
+  width: 100% !important;
+}
+.col-2{
+  width: calc(100% / 12 * 2) !important;
+}
+.col-4{
+  //width: calc(100% / 12 * 4) !important;
+  max-width: calc(100% / 12 * 4) !important;
+}
+.col-6{
+  width: calc(100% / 12 * 6) !important;
+}
+.col-8{
+  width: calc(100% / 12 * 8) !important;
+}
+
+.px-0{
+  padding: 0 0px!important;
+}
+.w-100{
+  width: 100% ;
+}
+.w-75{
+  width: 70% ;
+}
+.w-50{
+  width: 50% ;
+}
+.w-25{
+  width: 25%;
+}
+
+
+.pr-1{
+  padding-right: .25rem *10 !important;
+}
+.mr-1{
+  margin-right: .25rem *10 !important;
+}
+.mb-1{
+  margin-bottom: .25rem *10 !important;
+}
+.d-block{
+  display: block;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  //margin-right: -15px;
+  //margin-left: -15px;
+}
+
+.form-row{
+  display:flex;
+  margin-bottom: 16px;
+}
+
+h1{
+  font-size: 54px;
+}
+h2{
+  font-size: 36px;
+}
+h3{
+  font-size: 28px;
+}
+

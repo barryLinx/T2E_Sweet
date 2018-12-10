@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./scss/sweet.scss" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/css/all.css">
+  <!-- Material Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./image/logo-dark.png">
+</head>
+<body>
+    <div class="wrap">
+    
+      <header>
+        <h1>
+          <!-- <img src="./image/logo-all-dark.png" alt=""> -->
+          <a class="screen-576"  href="sweet.html" style="background-image: url('./image/logotype-sm-dark.svg');" class="logo" href=""></a>
+          <a  href="sweet.html"  style="background-image: url('./image/logo-all-dark.png');" class="logo" href=""></a>
+        </h1>
+      
+        <ul class="navbar">
+          <li class="nav-item"><a href="sweet.html">首頁</a></li>
+          <li class="nav-item"><a href="product.html">甜點</a></li>
+          <li class="nav-item"><a href="login.html">登入</a></li>
+        </ul>
+        <div class="cart">
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        <!-- <i class="fas fa-bars"></i> -->
+      </div>
+      <nav class="menu">      
+        <ul class="menu-nav">
+          <li class="nav-item current"><a class="nav-link" href="sweet.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">甜點</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">登入</a></li>
+        </ul>
+      </nav>
+      </header>
+    <section class="checkout-userdata">
+      <div class="checkout-page">
+        <div class="checkout-form">
+            <div class="checkout-header">
+                <div class="title">
+                    發票
+                  </div>
+                  <ul class="progressbar">
+                    <li class="finished"></li>
+                    <li class="finished"></li>
+                    <li class="active"></li>                   
+                  </ul>
+            </div>
+            <form class="checkout-body">
+                <div class="invoice">     
+                  <div class="invoice-pill col-12">
+                      <p  href="">電子發票</p>
+                  </div>               
+                  <div class="invoice-pill col-12 invoice-active">
+                      <p  href="">郵寄發票</p>
+                  </div>                     
+                </div>
+                <div class="Mailing">
+                    <label for="">地址</label>
+                    <div class="form-row form-mr-4">
+                      <div class="col-6 ">
+                        <select>
+                          <option value="audi">新竹市</option>
+                          <option value="mercedes">嘉義市</option>
+                          <option value="saab">台南市</option>
+                          <option selected value="volvo">高雄市</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <select>
+                          <option value="volvo">新興區</option>
+                          <option value="saab">彌陀區</option>
+                          <option value="mercedes">岡山區</option>
+                          <option value="audi">三民區</option>
+                        </select>
+                      </div>        
+                    </div>     
+                    <div class="form-row">
+                      <input type="" name="" value="" placeholder="幸福路 520 號">
+                    </div>
+                </div>
+                <!-- <div class="electronic">
+                    <label for="">電子郵件信箱</label>
+                    <div class="form-row">
+                        <input type="" name="" value="" placeholder="example@email.com">
+                      </div>
+                </div> -->
+                <label for="">統一編號（選填）</label>  
+                  <div class="form-row">
+                    <input type="" name="" value="" placeholder="12345678">
+                  </div>
+            </form>
+        </div>
+        <div class="checkout-footer">
+            <a href="">確認結帳</a>
+          </div> 
+      </div>
+    
+      <div class="Summary-list">
+        <div class="order-info">
+          <h3>訂單摘要</h3>
+          <div class="order-body">
+            <div>
+                 <span>小計</span>
+                 <span>NT$ 2,700</span>
+            </div>
+            <div>
+                <span>運費</span>
+                <span>NT$ 300</span>
+            </div>
+          </div>
+          <div class="order-footer">
+               <span>總計</span>
+               <span>NT$ 3,000</span>
+          </div>
+        </div>
+        <div class="cart-list">
+          <h3>購物清單</h3>
+          <div class="cart-card">
+            <div class="img" style="background-image: url(./image/prod1.jpg)"></div>
+            <div class="">
+              <p>焦糖馬卡龍（2 )</<p>
+                <p>NT$ 900</p>
+            </div>
+          </div>
+          <div class="cart-card">
+            <div class="img" style="background-image: url(./image/prod4.jpg)"></div>
+            <div >
+              <p>焦糖馬卡龍（2 )</<p>
+              <p>NT$ 900</p>
+            </div>
+          </div>
+          <div class="cart-card">
+            <div class="img" style="background-image: url(./image/prod3.jpg)"></div>
+            <div class="">
+              <p>焦糖馬卡龍（2 )</<p>
+                <p>NT$ 900</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    </div>
+    <footer>     
+      <div class="head">   
+        <div class="cntainer">
+            <div class="title">
+                <div class="img" style="background-image: url('./image/logo-dark.svg')">
+                </div>
+                <span>訂閱你我的甜蜜郵件</span>
+              </div>
+        
+              <div class="email">
+                <div class="mail-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input type="text">
+                <button><i class="fas fa-arrow-right"></i></button>
+              </div>
+        </div>              
+        </div>        
+        <div class="content">
+           <div class="container"> 
+              <div class="concact ">
+                  <div class="img" style="background-image: url(./image/logotype-lg-dark.svg)"></div>
+                  <div class="text">
+                    <p>07-1234-5678</p>
+                    <p>sweetaste@email.com </p>
+                    <p>800高雄市新興區幸福路 520 號</p>
+                  </div>              
+                </div>
+          
+                <div class="depiction">
+                  <div class="img" style="background-image: url(./image/sm-今天是個吃甜點的好日子.svg)"></div>
+                </div>
+            </div>
+         
+        </div>
+        <div class="concact-footer">
+          <div class="container">
+              <div class="icon">
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fas fa-at"></i></a>
+                </div>
+                <div class="copyright">
+                  <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </div>
+          </div>
+        </div>
+  </footer>
+  <script src="./js/my.min.js"></script>
+</body>
+</html>

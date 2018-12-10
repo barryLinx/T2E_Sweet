@@ -1,0 +1,83 @@
+
+//@import '_variable';
+.Menu{
+   display: flex; 
+   justify-content: space-between;  
+   margin-bottom: 60px;
+   margin-top: 60px;
+   @include sm(){
+    display: block; 
+   }
+  .Menu-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 100%;
+    max-width: calc(100% / 12 * 4) !important;
+    //max-width: 300px;
+    color: $primary;   
+    @include sm(){
+      max-width: calc(100% / 12 * 12) !important;
+     }
+    .Menu-item{
+      display:flex;
+      justify-content: center;
+      padding: 20px 0px;
+      background-color: #fff;
+      color: $primary;       
+      &:nth-child(1){
+        color: #fff; 
+        background-color: $primary;
+        &:hover{
+          background-color: $primary;
+        }
+      }
+      &:hover{
+        background-color: $third;
+      }
+      a{
+        color: $primary;
+       // background-color: #fff;
+       
+       }
+      span{
+        color: $primary;
+      }    
+    }
+    .active{
+      background-color: $third !important;
+    }
+  }
+}
+
+.prod-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ //width: 100%;
+  max-width: calc(100% / 12 * 8) !important;
+  @include sm(){
+    display: block;
+    max-width: calc(100% / 12 * 12) !important;
+    padding: 0px 30px;
+   }
+}
+.banner-top-img{
+  position: absolute;
+  right: 40px;
+  top:40px;
+  width: 89px;
+  height: 327px;
+  @include imgSize;
+  @include sm(){
+    width: 59px;
+    height: 218px;
+  }
+}
+
+.page{
+  display: flex;  
+}
+

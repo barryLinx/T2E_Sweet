@@ -1,0 +1,55 @@
+@mixin logo{
+  text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@mixin imgSize{
+   //background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+@mixin wrap {
+  width: 100%;
+  max-width: 1024px;
+
+  margin-left: auto;
+  margin-right: auto; 
+  @include ml(){
+    padding: 0 0px;
+  }
+}
+
+%banner-imgblur{
+  width: 100%;
+  height:256px;
+  @include imgSize;
+  filter: blur(5px); 
+ 
+
+}
+%bannerbg-shaow{
+  position: absolute; 
+  //z-index: 4;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  //background-color:$secondary;
+}
+%banner-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  //z-index: 5;
+  writing-mode: vertical-rl;
+ // text-orientation: upright;
+  font-size: 20px;
+  font-weight: 700;
+ // color: $primary;  
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
