@@ -188,18 +188,24 @@
   
 }
 .checkout-footer{
-  background-color: $secondary;
+  //background-color: $secondary;
   display:flex;
   justify-content: center;
-  padding: 20px 0px;
-  //height: 100%;
- // width: 100%;
- // max-width: 460px;  
+ // padding: 0px 0px; 
   a{   
+    padding: 19px 0px; 
     font-size: 24px;
     font-weight: bold;
+    background-color: $secondary;
     color: $primary;
-    height: 100%;
+    text-align: center;
+    //height: 100%;
+    width: 100%;
+    &:hover{
+      background-color: #f4c63a;
+      font-size: 28px;
+      
+    }
   }
 }
 .Summary-list{

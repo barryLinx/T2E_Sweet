@@ -870,12 +870,16 @@ footer .concact-footer {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: calc(100% / 12 * 8) !important; }
+  margin-right: -15px;
+  margin-left: -15px;
+  width: calc(100% / 12 * 8) !important; }
   @media (max-width: 576px) {
     .prod-list {
       display: block;
       max-width: calc(100% / 12 * 12) !important;
       padding: 0px 30px; } }
+  .prod-list .card {
+    margin: 0px 0px; }
 
 .banner-top-img {
   position: absolute;
@@ -904,7 +908,8 @@ footer .concact-footer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 60px; }
   @media (max-width: 576px) {
     .login-info {
       -webkit-box-orient: vertical;
@@ -1225,19 +1230,23 @@ footer .concact-footer {
   margin-right: 4px; }
 
 .checkout-footer {
-  background-color: #ffe180;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px 0px; }
+          justify-content: center; }
   .checkout-footer a {
+    padding: 19px 0px;
     font-size: 24px;
     font-weight: bold;
+    background-color: #ffe180;
     color: #3F5D45;
-    height: 100%; }
+    text-align: center;
+    width: 100%; }
+    .checkout-footer a:hover {
+      background-color: #f4c63a;
+      font-size: 28px; }
 
 .Summary-list {
   width: 30%;
@@ -1627,6 +1636,9 @@ footer .concact-footer {
     background-color: #ffe180;
     font-weight: bold;
     font-family: 'Microsoft JhengHei'; }
+    .end a:hover {
+      background-color: #f4c63a;
+      font-size: 28px; }
     @media (max-width: 768px) {
       .end a {
         width: 100%; } }

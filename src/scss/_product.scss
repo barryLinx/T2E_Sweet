@@ -56,12 +56,18 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
  //width: 100%;
-  max-width: calc(100% / 12 * 8) !important;
+  width: calc(100% / 12 * 8) !important;
   @include sm(){
     display: block;
     max-width: calc(100% / 12 * 12) !important;
     padding: 0px 30px;
+   }
+   .card{
+    margin: 0px 0px;
+    //padding: 0px 2px;
    }
 }
 .banner-top-img{

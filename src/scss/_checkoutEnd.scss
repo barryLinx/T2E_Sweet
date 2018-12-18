@@ -46,6 +46,10 @@
     background-color: $secondary;
     font-weight: bold; 
     font-family: 'Microsoft JhengHei';
+    &:hover{
+      background-color: #f4c63a;
+      font-size: 28px;
+    }
     @include ml(){
       width: 100%;
     }
