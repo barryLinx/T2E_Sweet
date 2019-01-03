@@ -141,6 +141,12 @@
       color: $four;
       font-size: 16px;
     }
+    &.is-vaild{
+      border:  3px solid $is-valid;
+    }
+    &.is-invalid{
+      border:  3px solid $is-invalid;
+    }
   }
   select{
     width: 100%; 
@@ -150,6 +156,14 @@
     // &:nth-child(1){
     //     margin-right: 4px;  
     // }
+  }
+  .error-message{
+    //color:$is-invalid;
+    margin-top: 20px;
+    color: #16f4f4;
+    font-weight: 700;
+    letter-spacing:1.2px;//字與字的距離
+   
   }
   .invoice{
     display: flex;

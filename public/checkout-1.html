@@ -64,17 +64,20 @@
               <div class="form-row form-mr-4">
                 <div class="col-6 ">
                   <label for="">名字</label>
-                  <input type="" name="" value="" placeholder="小明">
+                  <input class="is-invalid" type="" name="" value="" placeholder="小明">
+                  <span class="error-message">沒驗證</span>
                 </div>
                 <div class="col-6 ">
                   <label for="">姓氏</label>
-                  <input type="" name="" value="" placeholder="王">
+                  <input class="is-vaild"  value="" placeholder="王">
+                  <span class="error-message">沒驗證</span>
                 </div>
               </div>
               <div class="form-row ">
                 <div class="col-12">
                   <label for="">電話</label>
-                  <input type="" name="" value="" placeholder="0912-345-678">
+                  <input  type="" name="" value="" placeholder="0912-345-678">
+                  <span class="error-message">沒驗證</span>
                 </div>
               </div>
               <label for="">地址</label>
@@ -86,7 +89,9 @@
                     <option value="saab">台南市</option>
                     <option selected value="volvo">高雄市</option>
                   </select>
+                  <span class="error-message">沒驗證</span>
                 </div>
+                
                 <div class="col-6">
                   <select>
                     <option value="volvo">新興區</option>
@@ -94,11 +99,13 @@
                     <option value="mercedes">岡山區</option>
                     <option value="audi">三民區</option>
                   </select>
+                  <span class="error-message">沒驗證</span>
                 </div>        
               </div>
             
               <div class="form-row">
                 <input type="" name="" value="" placeholder="幸福路 520 號">
+                <span class="error-message">沒驗證</span>
               </div>
         
             </form>                 

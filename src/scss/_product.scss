@@ -58,16 +58,25 @@
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
- //width: 100%;
   width: calc(100% / 12 * 8) !important;
   @include sm(){
-    display: block;
-    max-width: calc(100% / 12 * 12) !important;
-    padding: 0px 30px;
+    //display: block !important;
+    width: calc(100% / 12 * 12) !important;
+    margin-right: 0px;
+    margin-left: 0px;
+   }
+   @include xs(){
+    padding: 0px 10px;
    }
    .card{
-    margin: 0px 0px;
-    //padding: 0px 2px;
+  
+    margin-bottom: 20px !important;
+    @include sm(){
+      margin: 15px 0px !important;
+    }
+    @include xs(){
+      width: calc(100% / 12 * 12) !important;
+     }
    }
 }
 .banner-top-img{
@@ -83,7 +92,52 @@
   }
 }
 
-.page{
-  display: flex;  
+.pagination-container{ 
+  text-align: right;
 }
 
+.pagination{
+  //display: inline-block;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @include sm(){
+    justify-content: center;
+  }
+  @include xs(){  
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pagination-item{
+    padding: 20px 0px;   
+    font-size: 20px;
+    border: 1px solid $third;
+    @include sm(){
+      padding: 20px 0px;  
+    }
+   }
+   .pagination-link{
+    padding: 16px 20px;   
+     border: 1px solid $third;
+     color: $primary;
+     font-size: 20px;
+     border: none;
+     background-color: #fff;
+   
+     cursor: pointer;
+     &.active{
+      color: #fff;
+      background-color: $primary;
+     }
+     &.disabled {
+      color: #dddddd;      
+     } 
+     @include sm(){
+     
+      font-size: 22px;
+    }
+   }
+}

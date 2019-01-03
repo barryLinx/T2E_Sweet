@@ -394,17 +394,27 @@ header{
        right: 22px;
        top: 25px;
        font-size: 20px;
+       width: 50px;
+       height: 30px;
        color: $hover;
+       text-align: center;
+       vertical-align: middle;
        //content: 'f004';
        cursor: pointer;
-       i{
         &:hover{
-          font-weight: bold;
-          //background-color: $hover;
-          //color: $hover;
+          i{
+            font-weight: bold;
+            //background-color: $hover;
+            //color: $hover;
+          }
+        }       
+       &.heart{
+        i{
+         font-weight: bold;
         }
-       }      
+      }      
      }
+   
    }
    .card-header{
       display: flex;  
@@ -444,6 +454,7 @@ header{
 
 
  footer{
+    //margin-top:100px;
     .head{
       width: 100%;    
       background-color: $hover;     
@@ -598,7 +609,7 @@ header{
     }
     .concact-footer{
      background-color: $third;
-     margin-bottom: 30px;    
+     //margin-bottom: 30px;    
      .container{
       @include wrap;
       display: flex;
@@ -606,6 +617,7 @@ header{
       color: $primary;
       font-size: 16px;
       padding: 0px 122px;
+      margin-bottom: 15px; 
       @include ml(){     
        
         justify-content: space-around;
