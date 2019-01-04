@@ -173,24 +173,37 @@
       font-size: 20px;   
       color: #EAF0ED; 
       font-weight: bold;
+     
       p{
         text-align: center;
         display: block;
-        padding: 14px 0px;   
-      
+        padding: 14px 0px; 
+        &:hover{
+          color: $primary;
+          background-color: $secondary;          
+        }   
       }
-      .Mailing{
-  
-      }    
-      .electronic{
-  
-      }       
+     
     }
     .invoice-active{
       color: $primary;
       background-color:#EAF0ED;
+     
     }
   }
+
+  .Mailing {
+    display: none;
+    &.active{
+      display: block;
+    }                
+  }    
+  .electronic{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }       
   
   .form-mr-4{
     div{

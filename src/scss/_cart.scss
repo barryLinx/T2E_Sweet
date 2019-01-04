@@ -4,7 +4,7 @@
   //flex: 1;
   //padding-bottom: 40px;
   &.cart-empty{
-    margin-bottom:200px;
+    margin-bottom:150px;
   }
   
   @include ml(){
@@ -167,7 +167,8 @@
         color:$primary;
         font-size: 20px;
         font-weight: bold;
-        margin-right: 40px;
+        margin-right: 20px;
+       
         @include sm(){
           margin-right: 0px;
         }
@@ -176,7 +177,12 @@
         background-color:#fff;
         outline: none;
         border: none;
-        color: $four;
+        color: $four;  
+         
+        &:hover{
+          color: #c73e3a;
+          transform: scale(2);
+        }
       }    
      
     }

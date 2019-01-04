@@ -1292,9 +1292,22 @@ footer .concact-footer {
       text-align: center;
       display: block;
       padding: 14px 0px; }
+      .checkout-body .invoice .invoice-pill p:hover {
+        color: #3F5D45;
+        background-color: #ffe180; }
   .checkout-body .invoice .invoice-active {
     color: #3F5D45;
     background-color: #EAF0ED; }
+
+.checkout-body .Mailing {
+  display: none; }
+  .checkout-body .Mailing.active {
+    display: block; }
+
+.checkout-body .electronic {
+  display: none; }
+  .checkout-body .electronic.active {
+    display: block; }
 
 .checkout-body .form-mr-4 div:nth-child(1) {
   margin-right: 4px; }
@@ -1406,7 +1419,7 @@ footer .concact-footer {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .cart-page.cart-empty {
-    margin-bottom: 200px; }
+    margin-bottom: 150px; }
   @media (max-width: 768px) {
     .cart-page {
       display: -webkit-box;
@@ -1577,7 +1590,7 @@ footer .concact-footer {
         color: #3F5D45;
         font-size: 20px;
         font-weight: bold;
-        margin-right: 40px; }
+        margin-right: 20px; }
         @media (max-width: 576px) {
           .cart-currently .cart .cart-item .price {
             margin-right: 0px; } }
@@ -1586,6 +1599,11 @@ footer .concact-footer {
         outline: none;
         border: none;
         color: #8DA291; }
+        .cart-currently .cart .cart-item .trash:hover {
+          color: #c73e3a;
+          -webkit-transform: scale(2);
+              -ms-transform: scale(2);
+                  transform: scale(2); }
 
 .order-summary {
   width: 30%;
