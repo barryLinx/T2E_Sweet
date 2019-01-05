@@ -396,6 +396,9 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
+      @media (max-width: 768px) {
+        .depiction .showbox .img {
+          width: 360px; } }
       @media (max-width: 576px) {
         .depiction .showbox .img {
           width: 100%;
@@ -1386,7 +1389,7 @@ footer .concact-footer {
       .Summary-list .cart-list .cart-card .img {
         width: 120px;
         height: 80px;
-        margin-right: 16px;
+        margin-right: 10px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
@@ -1406,7 +1409,8 @@ footer .concact-footer {
                 justify-content: center; }
         .Summary-list .cart-list .cart-card div p {
           font-size: 16px;
-          color: #8DA291; }
+          color: #8DA291;
+          width: 120px; }
           .Summary-list .cart-list .cart-card div p:nth-child(2) {
             font-size: 20px;
             font-weight: bold; }

@@ -277,6 +277,7 @@
    .cart-card{
      display:flex;
      justify-content: center;
+     //margin: 0px -8px;
      padding: 16px 20px;
      @include ml(){
       padding: 16px 8px;
@@ -284,7 +285,7 @@
      .img{
        width: 120px;
        height: 80px;    
-       margin-right: 16px;   
+       margin-right: 10px;   
        @include imgSize;
        @include ml(){
         margin-right: 8px;   
@@ -297,6 +298,7 @@
        p{
          font-size: 16px;
          color: #8DA291;
+         width: 120px;
          &:nth-child(2){
           font-size: 20px;
           font-weight: bold;
