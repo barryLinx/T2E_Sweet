@@ -157,14 +157,101 @@
     //     margin-right: 4px;  
     // }
   }
-  .error-message{
-    //color:$is-invalid;
-    margin-top: 20px;
-    color: #16f4f4;
-    font-weight: 700;
-    letter-spacing:1.2px;//字與字的距離
-   
+  .credit-input{
+    display: flex;
+    justify-content: space-between;
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: $primary;
+      border: none;
+      outline: 0;
+      margin-left: 0px;
+      padding: 0px 10px 0px 10px;
+      text-decoration: none;
+     // font-size: 16px;
+    }   
   }
+  .validate-tooltip{
+    position: relative;
+    .tooltip-text{
+      position: absolute;
+      width: 120px;    
+      background-color: $secondary;
+      color: $primary;
+      text-align: center;
+      border-radius: 6px;
+      padding: 10px 10px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+    &.is-invalid{
+      visibility: visible;
+      opacity: 1;
+     // transform: translate(-50%,-50%);
+      }
+     &.left{
+      transition: 0.5s;
+      position: absolute;
+      top: 50%;
+      left: -70px;
+      transform: translate(-50%,-50%);
+      transition: 0.5s;
+      &::before{
+        content: '';
+        position: absolute;
+        background-color: $secondary;
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        left: 92%;        
+        transform: rotate(45deg) translateY(-50%);       
+       
+      }
+     }
+     &.right{
+      position: absolute;
+      top: 50%;
+      right:-68%;
+      //right: -100px;
+      transform: translate(-50%,-50%);
+      transition: 0.5s;
+      &::before{
+        content: '';
+        position: absolute;
+        background-color: $secondary;
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        right: 96%;        
+        transform: rotate(45deg) translate(-50%,-50%);     
+       
+      }
+     }
+   
+     &.bottom{
+      position: absolute;
+      top: -20px;
+      left:50%;
+      //right: -100px;
+      transform: translate(-50%,-50%);
+      &::before{
+        content: '';
+        position: absolute;
+        background-color: $secondary;
+        width: 10px;
+        height: 10px;
+        top: 105%;
+        left: 50%;        
+        transform: rotate(45deg) translate(-50%,-50%); 
+      }
+     }
+     
+    }
+  }
+  
   .invoice{
     display: flex;
     margin-bottom: 30px;

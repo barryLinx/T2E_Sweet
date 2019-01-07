@@ -20,6 +20,7 @@ function toggleMenu(){
     );
     //Set Menu State
     showMenu = true;
+    var vv = /.+@+\..+/;
    
   }else{
     menuBtn.classList.remove('close');
