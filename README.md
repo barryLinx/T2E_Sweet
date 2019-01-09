@@ -1,6 +1,6 @@
 # Sweet RWD layout
 
-- Demo https://barrylinx.github.io/T2E_Sweet/public/sweet.html
+- Demo連結 https://barrylinx.github.io/T2E_Sweet/public/sweet.html
 
 ## Build Setup
 ``` bash
