@@ -853,18 +853,21 @@ footer .concact-footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 20px 0px;
       background-color: #fff;
       color: #3F5D45; }
       .Menu .Menu-list .Menu-item:nth-child(1) {
         color: #fff;
-        background-color: #3F5D45; }
+        background-color: #3F5D45;
+        padding: 20px 0px; }
         .Menu .Menu-list .Menu-item:nth-child(1):hover {
           background-color: #3F5D45; }
       .Menu .Menu-list .Menu-item:hover {
         background-color: #EAF0ED; }
       .Menu .Menu-list .Menu-item a {
-        color: #3F5D45; }
+        color: #3F5D45;
+        text-align: center;
+        padding: 20px 0px;
+        width: 100%; }
       .Menu .Menu-list .Menu-item span {
         color: #3F5D45; }
     .Menu .Menu-list .active {
@@ -982,7 +985,8 @@ footer .concact-footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      margin-bottom: 6px; } }
 
 .login {
   display: -webkit-box;
@@ -1119,7 +1123,17 @@ footer .concact-footer {
           justify-content: center;
   height: 56px;
   background-color: #fff;
-  margin: 0px 0px 16px 0px; }
+  margin: 0px 0px 16px 0px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer; }
+  .community-link:hover {
+    -webkit-transform: scale(1.1, 1.1) translateY(-8px);
+        -ms-transform: scale(1.1, 1.1) translateY(-8px);
+            transform: scale(1.1, 1.1) translateY(-8px);
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
   @media (max-width: 576px) {
     .community-link {
       display: -webkit-box;
@@ -1473,7 +1487,11 @@ footer .concact-footer {
       text-align: center;
       padding: 16px 20px; }
   .Summary-list .cart-list {
-    border: 1px solid #EAF0ED; }
+    border: 1px solid #EAF0ED;
+    height: 100%; }
+    .Summary-list .cart-list .cart-overflow {
+      height: 330px;
+      overflow-y: scroll; }
     .Summary-list .cart-list .cart-card {
       display: -webkit-box;
       display: -ms-flexbox;

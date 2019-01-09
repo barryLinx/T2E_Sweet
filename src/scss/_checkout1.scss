@@ -360,7 +360,12 @@
     }
   }
   .cart-list{
-    border: 1px solid #EAF0ED;
+    border: 1px solid #EAF0ED;  
+    height:100% ;
+    .cart-overflow{
+      height:330px;
+      overflow-y:scroll;
+    }
    .cart-card{
      display:flex;
      justify-content: center;
