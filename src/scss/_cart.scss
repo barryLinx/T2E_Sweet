@@ -267,6 +267,7 @@
       font-weight: bold;
       color: $primary;
       background-color: $secondary;
+      cursor: pointer;
       @include ml(){
        // margin: 0px 23px;
       }

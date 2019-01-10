@@ -1265,7 +1265,8 @@ footer .concact-footer {
   width: 100%;
   padding: 16px 0px 16px 20px;
   color: #8DA291;
-  font-size: 16px; }
+  font-size: 16px;
+  border: none; }
   .checkout-body input::-webkit-input-placeholder {
     color: #8DA291;
     font-size: 16px; }
@@ -1293,9 +1294,11 @@ footer .concact-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .checkout-body .credit-input input {
+    margin-right: 0; }
   .checkout-body .credit-input div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1311,7 +1314,7 @@ footer .concact-footer {
     border: none;
     outline: 0;
     margin-left: 0px;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 25px 0px 10px;
     text-decoration: none; }
 
 .checkout-body .validate-tooltip {
@@ -1794,7 +1797,8 @@ footer .concact-footer {
     font-size: 24px;
     font-weight: bold;
     color: #3F5D45;
-    background-color: #ffe180; }
+    background-color: #ffe180;
+    cursor: pointer; }
 
 .end-banner {
   position: relative;
