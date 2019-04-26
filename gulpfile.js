@@ -19,7 +19,16 @@ gulp.task('copyHtml',function(){
 
 gulp.task('sass',function(){
   var plugins =[
-    autoprefixer({browsers:['last 3 version','> 5%','ie 8']})
+    autoprefixer({
+      browsers:['last 3 version',
+                '> 5%','ie 6-8',
+                'Android >= 4.0',
+                'Firefox ESR',
+               
+               
+                'last 3 Safari versions']
+              
+              })
   ];
   return gulp.src('./src/scss/sweet.scss')
   .pipe(plumber())
