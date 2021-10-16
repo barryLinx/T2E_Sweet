@@ -9,7 +9,7 @@ $ npm install
 ```
 
 ## Design layout 
- - 六角學院 甜點店商    https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/
+ - 甜點版型    https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/
 
 ## reference By
 - https://easonchang0115.github.io/challenge-hex/cart.html
